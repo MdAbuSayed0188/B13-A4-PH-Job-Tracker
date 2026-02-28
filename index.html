@@ -68,6 +68,65 @@
           Rejected
         </button>
       </div>
+      <section id="noJobAvailabol" class="hidden">
+        <div class="border-2 border-black mt-5 p-10 mb-3 sm:p-20">
+          <img class="w-24 flex mx-auto" src="./jobs.png" alt="" />
+          <h4 class="text-2xl font-bold text-center">No Jobs Available</h4>
+          <p class="text-gray-400 text-center">
+            Check back soon for new job opportunities
+          </p>
+        </div>
+      </section>
+
+      <div id="main-jobContainer">
+        <section id="All-card" class="">
+          <!-- card 1 -->
+          <div id="card" class="card bg-base-100 shadow-sm mb-6 p-4 sm:p-8">
+            <div class="flex justify-between">
+              <h4 class="companyName text-2xl sm:text-3xl font-bold">
+                Mobaile Frist Crop
+              </h4>
+              <button
+                onclick="deleteCard()"
+                class="delete rounded-2xl sm:rounded-4xl border-2 border-y-blue-400 py-1 sm:py-2 px-3 sm:px-5"
+              >
+                <img
+                  class="size-3 sm:size-5 pointer-events-none"
+                  src="./delete.png"
+                  alt=""
+                />
+              </button>
+            </div>
+            <p class="jobName mb-2 text-gray-500">React Native Developer</p>
+            <p class="advanTage mb-2 text-gray-500">
+              Remote + Full-time + $1500-$1750
+            </p>
+            <div class="">
+              <button
+                class="font-bold border-2 border-amber-500 p-1 state text-amber-500"
+              >
+                NOT APPLIED
+              </button>
+            </div>
+            <p class="notes my-2 text-gray-900">
+              Build cross-platfrom mobaile applications using React Native. Work
+              on productd used by milions of users worldwide
+            </p>
+            <div class="flex gap-5">
+              <button
+                class="interview-btn px-2 sm:px-4 py-1 sm:py-2 rounded-2xl font-bold border-2 border-green-800 text-green-800"
+              >
+                INTERVIEW
+              </button>
+              <button
+                class="rejected-btn px-2 sm:px-4 py-1 sm:py-2 border-2 rounded-2xl font-bold border-red-600 text-red-600"
+              >
+                REJECTED
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <script src="script.js"></script>
