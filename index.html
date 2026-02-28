@@ -33,7 +33,42 @@
         </div>
       </div>
     </header>
-    
+    <hr class="my-5" />
+    <main class="w-[80%] mx-auto">
+      <section>
+        <div class="flex justify-between items-center mt-12">
+          <p class="text-2xl sm:text-3xl font-bold">Available Jobs</p>
+          <div class="flex text-gray-600 text-[20px]">
+            <p id="total-allJob">0</p>
+            <p>Jobs</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="flex gap-3 my-5">
+        <button
+          onclick="toggleStyle('allJob')"
+          id="allJob"
+          class="border-2 border-black rounded-3xl bg-black text-white px-6 py-2"
+        >
+          All
+        </button>
+        <button
+          onclick="toggleStyle('interview')"
+          id="interview"
+          class="border-2 border-green-800 rounded-3xl hover:bg-red-600 text-black bg-gray-300 px-6 py-2"
+        >
+          Interview
+        </button>
+        <button
+          onclick="toggleStyle('rejected')"
+          id="rejected"
+          class="border-2 text-black rounded-3xl hover:bg-green-600 bg-gray-300 border-red-600 px-6 py-2"
+        >
+          Rejected
+        </button>
+      </div>
+    </main>
 
     <script src="script.js"></script>
   </body>
