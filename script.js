@@ -307,7 +307,7 @@ REJECTED
 }
 
 // delete card
-function deleteCard(event) {
+function deleteCard() {
   const card = event.target.closest("#card");
 
   const companyName = card.querySelector(".companyName").innerText;
